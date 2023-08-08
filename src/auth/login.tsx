@@ -10,7 +10,6 @@ export default function Login() {
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    const [error, setError] = useState('')
     const {setTimeActive} = useAuthValue()
     const navigate = useNavigate()
 
@@ -31,7 +30,7 @@ export default function Login() {
                 navigate('/home')
             }
         })
-        .catch(err=>setError(err.message))
+        .catch(err=>new Error(err.message))
     }
 
     const handleEmail = (e: React.ChangeEvent<HTMLInputElement>)=>{

@@ -1,5 +1,4 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+
 // import MovieData from '../hooks/getMovies';
 import FetchQuery from '../hooks/getAllTrends';
 

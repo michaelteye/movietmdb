@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Year from "../../dashboard/Radios/year";
 import Country from "../../dashboard/Radios/country";
 import Genre from "../../dashboard/Radios/genre";
@@ -13,9 +13,7 @@ import ReactPaginate from "react-paginate";
 import { Link } from "react-router-dom";
 import WatchMovie from "../watch/watchMovie";
 import SingleMovieSvg from "../../components/icons/singleMovie";
-import SearchLayout from "../../components/layouts/searchLayout";
 import SearchMovieQuery from "../../hooks/searchMovie";
-import StarSvg from "../../components/icons/star";
 import StarMainSvg from "../../components/icons/star-solid";
 
 export default function NewReleased() {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import {  Route, Routes, useNavigate } from 'react-router-dom';
 import Profile from '../pages/profile';
 import VerifyEmail from '../firebase/verfyEmail';
@@ -10,10 +10,7 @@ import PrivateRoute from '../auth/PrivateRoute';
 import Login from '../auth/login';
 import Signup from '../auth/signup';
 import NewReleased from '../pages/NewReleased/NewReleased';
-// import MewReleased from '../pages/NewReleased/MewReleased';
 import MovieDetails from '../pages/detailPage/moviedetails';
-import WatchMovie from '../pages/watch/watchMovie';
-import Display from '../pages/Display';
 import ReleasesDisplay from '../pages/HomePage/HomeDisplay';
 
 export default function Allroutes() {

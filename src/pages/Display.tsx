@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ArrowSvg from '../components/icons/ArrowSvg';
-
 import SearchLayout from '../components/layouts/searchLayout';
 import AllTrending from '../dashboard/featured/Trending';
 import TrendingMovie from '../dashboard/featured/TrendingMovies';

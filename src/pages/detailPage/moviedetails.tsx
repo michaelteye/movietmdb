@@ -1,5 +1,4 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import FetchSingleMovieDetails from '../../hooks/detailMovie';
 import WhatsappSvg from '../../components/icons/whatsapp';
@@ -15,7 +14,6 @@ import FetchPaginateUpComingQuery from '../../hooks/pagenateUpcoming';
 import WatchSvg from '../../components/icons/watch';
 import { Link } from 'react-router-dom';
 import WatchError from '../../components/error/watchError';
-import MovieSvg from '../../components/icons/movie';
 
 
 

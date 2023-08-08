@@ -1,5 +1,3 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
 import FetchSingleMovieDetails from '../../hooks/detailMovie'
 import { Link } from 'react-router-dom'
 
