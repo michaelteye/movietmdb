@@ -41,7 +41,7 @@ export default function Allroutes() {
     if(currentUser?.emailVerified){
       navigate('/home')
     }
-  })
+  },[currentUser])
 
 
   return (
@@ -64,19 +64,21 @@ export default function Allroutes() {
         <Route path='/verify-email' element={<VerifyEmail/>} /> 
         <Route path='/' 
          element={
-          !currentUser?.emailVerified ? <Signup/> :  <NewReleased/>
+          !currentUser?.emailVerified ? <Signup/> : 
+           <NewReleased/>
       
          }/>
      
 
         <Route path='/home' 
          element={
-          !currentUser?.emailVerified ? <Signup/> : <ReleasesDisplay/>
+          !currentUser?.emailVerified ? <Signup/> :
+           <ReleasesDisplay/>
          
          }/>
         <Route path='/movie/:movieId'
          element={
-          !currentUser?.emailVerified? <Signup/> :
+          !currentUser?.emailVerified ? <Signup/> :
          <MovieDetails/>
          }/>
       </Routes>  
